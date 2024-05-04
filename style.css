@@ -1,0 +1,12 @@
+.icons {
+  font-size: 3.5rem;
+}
+
+.heading {
+  gap: 5rem;
+}
+
+#final-list>ul>li>p {
+  padding: 0 45px 0 45px;
+
+}

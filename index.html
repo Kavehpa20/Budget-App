@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cw11</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container p-5">
+
+    <div class="row d-flex justify-content-evenly">
+      <div class="col d-flex justify-content-center ">
+        <div>
+          <div>
+            <p class="fs-2 fw-bolder ">BUDGET APP</p>
+          </div>
+
+          <div class="mt-5">
+            <form id="form-budget" class="budget-content d-flex flex-column border border-3 border-success p-2 gap-3">
+              <label for="budget-input">Please Enter Your Budget</label>
+              <input class="form-control border border-1 border-success " type="number" id="budget-input">
+              <button class="d-flex justify-content-center p-2 btn btn-outline-success col-4"
+                type="submit">Calculate</button>
+            </form>
+          </div>
+
+          <div class="mt-5">
+            <form id="form-expenses" class="budget-content d-flex  flex-column border border-3 border-danger p-2 gap-3">
+              <label for="expenses">Please Enter Your Expenses</label>
+              <input class="form-control border border-1 border-danger" type="text" id="expenses">
+              <label for="expenses-amount">Please Enter Your Expenses Amount</label>
+              <input class="form-control border border-1 border-danger" type="number" id="expenses-amount">
+              <button id="expenses-btn" class="d-flex justify-content-center py-2 btn btn-outline-danger col-6"
+                type="submit">Add Expenses</button>
+            </form>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col d-flex justify-content-center ">
+
+        <div class="d-flex flex-column mt-5 ">
+          <div class="mt-5 d-flex gap-5">
+            <div class="d-flex flex-column justify-content-center align-items-center ">
+              <p class="fs-5 fw-semibold text-uppercase ">Budget</p>
+              <ion-icon class=" icons text-primary " name="cash-outline"></ion-icon>
+              <p class="fs-4 fw-semibold text-success " id="budget-number">$ 0</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center ">
+              <p class="fs-5 fw-semibold text-uppercase ">Expenses</p>
+              <ion-icon class=" icons text-primary " name="card-outline"></ion-icon>
+              <p class="fs-4 fw-semibold text-danger  " id="expenses-number">$ 0</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center ">
+              <p class="fs-5 fw-semibold text-uppercase ">Balance</p>
+              <ion-icon class=" icons text-primary " name="wallet-outline"></ion-icon>
+              <p class="fs-4 fw-semibold text-success " id="balance-number">$ 0</p>
+            </div>
+          </div>
+          <div>
+            <ul class="heading d-flex start p-0">
+              <li class="d-inline fw-semibold">Expenses Title</li>
+              <li class="d-inline fw-semibold">Expenses Value</li>
+            </ul>
+            <hr>
+          </div>
+          <div id="final-list">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
